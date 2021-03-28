@@ -1,0 +1,24 @@
+{
+  "name": "wf-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "wrangler dev",
+    "parcel" : "webpack -c ./webpack.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ts-loader": "^8.0.18",
+    "typescript": "^4.2.3",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^4.6.0",
+    "worktop": "^0.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.37"
+  }
+}

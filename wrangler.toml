@@ -1,0 +1,8 @@
+name = "wf-app"
+type = "webpack"
+
+account_id = "b7d187081d1614ae2c794c55e4750926"
+workers_dev = true
+webpack_config = "webpack.config.js"
+route = ""
+zone_id = ""
