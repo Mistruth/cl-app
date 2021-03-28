@@ -1,16 +1,11 @@
 import { Router } from 'worktop';
-
 import { listen } from 'worktop/cache';
+import { uid } from 'worktop/utils'
 
 const API = new Router();
 
-API.add('GET', '/greet/:name', (req, res) => {
-	res.end(`Hello, ${req.params.name}!`);
-});
-
-API.add('GET', '/', (req, res) => {
-
-	res.end('this is a test baby');
+API.add('GET', '/query', (req, res) => {
+	res.end(uid(16))
 });
 
 listen(API.run);

@@ -19,6 +19,6 @@ module.exports = {
       path.join(__dirname, 'node_modules'),
       'node_modules'
     ],
-    extensions: ['.tsx', '.ts', '.js'],
+    extensions: ['.tsx', '.ts', '.js', '.mjs'],
   },
 }
