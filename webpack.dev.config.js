@@ -2,8 +2,9 @@ const path = require('path')
 
 module.exports = {
   entry: './src/index.ts',
-  mode: 'production',
+  mode: 'development',
   target: "webworker",
+  devtool: 'none',
   module: {
     rules: [
       {
@@ -11,6 +12,16 @@ module.exports = {
         use: 'babel-loader',
         exclude: /node_modules/,
       },
+      {
+        test: /\.(less|css)$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          {
+            loader: 'less-loader',
+          }
+        ]
+      }
     ]
   },
   resolve: {

@@ -1,11 +1,12 @@
 import { Router } from 'worktop';
 import { listen } from 'worktop/cache';
-import { uid } from 'worktop/utils'
+import * as TODO from './routers'
 
 const API = new Router();
 
-API.add('GET', '/query', (req, res) => {
-	res.end(uid(16))
-});
+
+API.add('GET', '/queryList', TODO.list);
+API.add('POST', '/create', TODO.create);
+API.add('GET', '/', TODO.html);
 
 listen(API.run);

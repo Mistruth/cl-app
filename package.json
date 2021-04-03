@@ -6,12 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "wrangler dev",
-    "parcel" : "webpack -c ./webpack.config.js"
+    "parcel": "webpack -c ./webpack.config.js",
+    "publish": "wrangler publish"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/core": "^7.13.14",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "ts-loader": "^8.0.18",
     "typescript": "^4.2.3",
     "webpack": "^4.46.0",
@@ -19,6 +23,12 @@
     "worktop": "^0.2.0"
   },
   "devDependencies": {
-    "@types/node": "^14.14.37"
+    "@babel/preset-react": "^7.13.13",
+    "@babel/preset-typescript": "^7.13.0",
+    "@types/node": "^14.14.37",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.3",
+    "babel-loader": "^8.2.2",
+    "less-loader": "^7.3.0"
   }
 }

@@ -2,13 +2,14 @@
   "compilerOptions": {
     "strict": true,
     "target": "esnext",
+    "jsx": "react",
     "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
-    "lib": ["esnext", "dom.iterable", "webworker"],
+    "lib": ["esnext", "dom.iterable", "webworker","dom"],
     "strictFunctionTypes": true,
     "strictNullChecks": true,
     "noImplicitThis": true,
-    "noImplicitAny": true
+    "noImplicitAny": true,
   },
   "include": [
     "./src/*.ts",
