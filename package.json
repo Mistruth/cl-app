@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "wrangler dev",
+    "dev": "wrangler dev --env staging",
     "parcel": "webpack -c ./webpack.config.js",
-    "publish": "wrangler publish"
+    "publish": "wrangler publish --env production"
   },
   "keywords": [],
   "author": "",

@@ -1,0 +1,1 @@
+declare const MY_FIRST_KV_STORE: any

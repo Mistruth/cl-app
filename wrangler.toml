@@ -1,8 +1,17 @@
 name = "wf-app"
 type = "webpack"
+kv_namespaces = [
+  { binding = "MY_FIRST_KV_STORE", id = "dfa6228d29604d7a9d6ff0924e330ac4", preview_id = "99b36cb9c71d4a5ba80f2c9c4a5b4bfe"},
+]
 
 account_id = "b7d187081d1614ae2c794c55e4750926"
 workers_dev = true
 webpack_config = "webpack.config.js"
 route = ""
 zone_id = ""
+
+[env.staging]
+webpack_config = "webpack.dev.config.js"
+
+[env.production]
+webpack_config = "webpack.config.js"
