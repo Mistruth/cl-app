@@ -4,9 +4,8 @@ import * as TODO from './routers'
 
 const API = new Router();
 
-
 API.add('GET', '/queryList', TODO.list);
 API.add('POST', '/create', TODO.create);
-API.add('GET', '/', TODO.html);
+API.add('GET', '/index.html', TODO.html);
 
 listen(API.run);
