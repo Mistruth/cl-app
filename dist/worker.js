@@ -7245,11 +7245,7 @@ function s(r) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getList", function() { return getList; });
 // declare const LISTDB: KV.Namespace = MY_FIRST_KV_STORE
-const getList = async username => {
-  await MY_FIRST_KV_STORE.put('data', '1');
-  const res = await MY_FIRST_KV_STORE.get('data');
-  console.log(res); // return LISTDB.get(username)
-}; // export const addItem = (username: string, value: any) => {
+const getList = async username => {}; // export const addItem = (username: string, value: any) => {
 //   return LISTDB.put(username, value)
 // }
 
